@@ -21,7 +21,10 @@ module.exports = {
   module:  {
     rules: [
       {test: /\.css$/, use: ['style-loader', 'css-loader']},
-      {test: /\.less$/, use: ['style-loader', 'css-loader', "less-loader"]}
+      {test: /\.(jpg|png|gif|jpeg)$/, use: 'url-loader?limit=46546&name=[name].[ext]'},
+      {test: /\.(ttf|eot|svg|woff2)$/, use: "url-loader"},
+      // {test: /\.js$/, use: 'babel-loader', exclude: '/node_modules/' }
+
     ]
   }
 

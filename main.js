@@ -1,6 +1,5 @@
 import $ from 'jquery'
 import './src/css/index.css'
-import "./src/css/index.less"
 
 $(function(){
   $("li:odd").css("backgroundColor", 'yellow');
@@ -9,3 +8,13 @@ $(function(){
   });
 
 })
+
+class Person {
+  static say(){
+    alert('hi')
+  }
+}
+
+ let p = new Person()
+
+ Person.say()
